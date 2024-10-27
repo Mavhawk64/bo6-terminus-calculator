@@ -1,0 +1,78 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-color: #948887;
+}
+
+#orbital-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 100px);
+    grid-gap: 10px;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+#orbital-grid div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100px;
+    height: 100px;
+    background-color: #7b6e6d;
+    border-radius: 8px;
+    position: relative; /* Make div relative to place labels absolutely */
+    cursor: pointer;
+}
+
+#orbital-grid img {
+    max-width: 80px;
+    max-height: 80px;
+}
+
+/* Styling for empty cells */
+#orbital-grid .empty {
+    background-color: transparent;
+    cursor: default;
+}
+
+/* Styling to center variable labels over images */
+.variable-label {
+    font-size: 1.5em;
+    font-weight: bold;
+    color: inherit;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    pointer-events: none; /* Prevents clicks on the label itself */
+}
+
+/* CRT Container Styling */
+#crt-container {
+    position: relative;
+    width: 300px;
+    margin: 20px auto;
+}
+
+#crt-image {
+    width: 100%;
+}
+
+#crt-display {
+    position: absolute;
+    top: 30%; /* Adjust for positioning */
+    left: 50%;
+    transform: translateX(-50%);
+    width: 80%; /* Adjust to fit TV screen area */
+    text-align: center;
+    color: #A0D2DB; /* Light blue-gray color */
+    font-family: 'Courier New', monospace; /* Retro font */
+    font-size: 1.5em;
+    line-height: 1.5;
+}
+
+/* Single code line styling */
+#code-line {
+    margin: 0;
+}
+

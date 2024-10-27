@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Black Ops 6 - Terminus Easter Egg Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <h1>Black Ops 6 - Terminus Easter Egg Calculator</h1>
+
+    <div id="orbital-grid">
+        <!-- Row 1 -->
+        <div class="empty"></div>
+        <div class="empty"></div>
+        <div data-value="0" id="s" onclick="selectOrbital(this)">
+            <img src="s_orbital.png" alt="s-Orbital">
+        </div>
+
+        <!-- Row 2 -->
+        <div class="empty"></div>
+        <div data-value="11" id="py" onclick="selectOrbital(this)">
+            <img src="py_orbital.png" alt="p_y-Orbital">
+        </div>
+        <div data-value="10" id="pz" onclick="selectOrbital(this)">
+            <img src="pz_orbital.png" alt="p_z-Orbital">
+        </div>
+
+        <!-- Row 3 -->
+        <div data-value="22" id="dxy" onclick="selectOrbital(this)">
+            <img src="dxy_orbital.png" alt="d_xy-Orbital">
+        </div>
+        <div data-value="21" id="dx2y2" onclick="selectOrbital(this)">
+            <img src="dx2y2_orbital.png" alt="d_x2y2-Orbital">
+        </div>
+        <div data-value="20" id="dz2" onclick="selectOrbital(this)">
+            <img src="dz2_orbital.png" alt="d_z2-Orbital">
+        </div>
+    </div>
+
+    <!-- CRT TV Display -->
+    <div id="crt-container">
+        <img src="crt_tv.png" alt="CRT TV" id="crt-image">
+        <div id="crt-display">
+            <!-- Single line for code output -->
+            <p></p>
+            <p id="code-line">-- -- --</p>
+        </div>
+    </div>
+
+
+    <script src="script.js"></script>
+</body>
+
+</html>
